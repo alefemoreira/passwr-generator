@@ -55,9 +55,9 @@ def verificaComplexidade(senha):
         elif c in numbers:
             qtd['numbers'] += 1
             n = True
-    
+
     pont = calculaComplexidade(senha, qtd) + presencaDeRequerimentos(l, u, s, n, len(senha))
-    
+
     print(pont)
 
 lower='abcdefghijklmnopqrstuvwxyz'
@@ -72,6 +72,6 @@ tamanhoDaSenha = int(input("Digite o tamanho da sua senha: "))
 for c in range(0, tamanhoDaSenha):
     senha += todosCaracteres[randint(0, len(todosCaracteres)-1)]
 
-print(f'sua senha é : {senha}')
+print(f'\033[0;30msua senha é : \033[4;32m{senha}\033[m')
 
 verificaComplexidade(senha)
