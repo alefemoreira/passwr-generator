@@ -72,6 +72,6 @@ tamanhoDaSenha = int(input("Digite o tamanho da sua senha: "))
 for c in range(0, tamanhoDaSenha):
     senha += todosCaracteres[randint(0, len(todosCaracteres)-1)]
 
-print(f'\033[0;30msua senha é : \033[4;32m{senha}\033[m')
+print(f'\033[0;37msua senha é : \033[4;32m{senha}\033[m')
 
 verificaComplexidade(senha)
